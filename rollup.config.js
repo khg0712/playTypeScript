@@ -13,12 +13,12 @@ const config = [
                 plugins: ["@babel/plugin-proposal-class-properties"],
                 exclude: 'node_modules/**' // only transpile our source code
             }),
-            terser({
-                module: true,
-                mangle: {
-                    reserved: ['src']
-                }
-            })
+            // terser({
+            //     module: true,
+            //     mangle: {
+            //         reserved: ['src']
+            //     }
+            // })
         ]
     }
 ];

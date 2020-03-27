@@ -9,15 +9,17 @@ import Rich from "./Rich.min.mjs.js";
 import defineProperty from "./defineProperty";
 class Index {
     constructor(person) {
-        console.log(this);
-        Rich.LOOPER.addMainLoop('test', v => {
-            console.log(this.keyName_test);
+        Rich.LOOPER.addMainLoop('테스트루프', v => {
+            console.log(this.keyName_test, this.keyName_test2);
         });
     }
 }
 __decorate([
     defineProperty(Rich.DEFINE_TYPE.STRING, { value: '태림이 천재' })
 ], Index.prototype, "keyName_test", void 0);
+__decorate([
+    defineProperty(Rich.DEFINE_TYPE.STRING, { value: '태림이 천재2' })
+], Index.prototype, "keyName_test2", void 0);
 ;
 let test = new Index({ firstName: 'test', lastName: 'test2' });
-console.log('test', test);
+console.log('현재인스턴스', test);
