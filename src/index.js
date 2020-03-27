@@ -16,7 +16,7 @@ class Index {
     }
 }
 __decorate([
-    defineProperty(Rich.DEFINE_TYPE.STRING, { value: '태림이 바봉16' })
+    defineProperty(Rich.DEFINE_TYPE.STRING, { value: '태림이 천재' })
 ], Index.prototype, "keyName_test", void 0);
 ;
 let test = new Index({ firstName: 'test', lastName: 'test2' });

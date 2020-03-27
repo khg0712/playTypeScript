@@ -4,7 +4,7 @@ import Person from "./Person";
 import defineProperty from "./defineProperty";
 
 class Index {
-    @defineProperty(Rich.DEFINE_TYPE.STRING, {value: '태림이 바봉16'})
+    @defineProperty(Rich.DEFINE_TYPE.STRING, {value: '태림이 천재'})
     keyName_test: string ;
     constructor(person: Person) {
         console.log(this)
