@@ -972,7 +972,8 @@ var qe,
 }), qe.addClass("ClassUUID", u), qe.addClass("Dom", W, !1), qe.addClass("Css", ce, !1), qe.addStatic("DEFINE_TYPE", Te), qe.addStatic("DETECTOR", U), qe.addStatic("KEY", D), qe.addStatic("LOOPER", he), qe.addStatic("STORAGE", Ne), qe.addStatic("WIN", ke), oe(window, "resize"), qe);
 
 function defineProperty(type, option) {
-  return function (target, propName) {
+  return function (target, propName, ...etc) {
+    console.log(etc);
     Rich.defineProperty(target, propName, type, option);
   };
 }
@@ -995,11 +996,11 @@ class Index {
 }
 
 __decorate([defineProperty(Rich.DEFINE_TYPE.STRING, {
-  value: '태림이 천재'
+  value: '정의'
 })], Index.prototype, "keyName_test", void 0);
 
 __decorate([defineProperty(Rich.DEFINE_TYPE.STRING, {
-  value: '태림이 천재2'
+  value: '정의2'
 })], Index.prototype, "keyName_test2", void 0);
 let test = new Index({
   firstName: 'test',

@@ -5,7 +5,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import Rich from "./Rich.min.mjs.js";
+import Rich from "./Rich.min.mjs";
 import defineProperty from "./defineProperty";
 class Index {
     constructor(person) {
@@ -15,10 +15,10 @@ class Index {
     }
 }
 __decorate([
-    defineProperty(Rich.DEFINE_TYPE.STRING, { value: '태림이 천재' })
+    defineProperty(Rich.DEFINE_TYPE.STRING, { value: '정의' })
 ], Index.prototype, "keyName_test", void 0);
 __decorate([
-    defineProperty(Rich.DEFINE_TYPE.STRING, { value: '태림이 천재2' })
+    defineProperty(Rich.DEFINE_TYPE.STRING, { value: '정의2' })
 ], Index.prototype, "keyName_test2", void 0);
 ;
 let test = new Index({ firstName: 'test', lastName: 'test2' });

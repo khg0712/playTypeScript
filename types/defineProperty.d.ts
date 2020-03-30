@@ -1,1 +1,1 @@
-export default function defineProperty(type: any, option: any): (target: any, propName: string) => any;
+export default function defineProperty(type: any, option: any): (target: any, propName: string, ...etc: any[]) => any;
